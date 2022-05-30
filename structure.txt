@@ -1,0 +1,39 @@
+├───BlogWall
+│   ├───blog_posts
+|   |      |___ __init__.py
+|   |      |___ forms.py
+|   |      |___ views.py
+│   └───users
+|   |      |___ __init__.py
+|   |      |___ forms.py
+|   |      |___ views.py
+|   |      |___ picture_handler.py
+│   ├───core
+|   |      |___ __init__.py
+|   |      |___ views.py
+│   ├───error_pages
+|   |      |___ handlers.py
+│   ├───static
+|   |      |___ profile_pics
+|   |      |        |___ default_profile.png
+|   |      |___ images
+|   |      |        |___ background.jpg
+|   |      |___ styles
+|   |               |___ style.css
+│   ├───templates
+|   |      |___ error_pages
+|   |      |        |___ 404.html
+|   |      |        |___ 403.html
+|   |      |___ account.html
+|   |      |___ base.html
+|   |      |___ blog_post.html
+|   |      |___ create_post.html
+|   |      |___ index.html
+|   |      |___ info.html
+|   |      |___ login.html
+|   |      |___ register.html
+|   |      |___ user_blog_posts.html
+|   |___ __init__.py
+|   |___ models.py
+|___ app.py
+|___ structure.txt
