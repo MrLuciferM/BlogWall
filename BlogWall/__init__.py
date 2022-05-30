@@ -14,14 +14,15 @@ app = Flask(__name__)
 ########################
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir,'data.sqlite')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bvejuyfpkojkip:eba0b88f425f8652dd2145cc8114d698ebdee8fd8adbcf55d8304c3b31387999@ec2-3-234-131-8.compute-1.amazonaws.com:5432/d3nn6b14lkofub'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir,'data.sqlite')
 app.config['SECRET_KEY'] = 'SOMESECRETKEYIDKWHATTOADDHERE'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = FALSE
 
 db = SQLAlchemy(app)
 
 Migrate(app,db)
+
+db.create_all()
 
 ########################
 
